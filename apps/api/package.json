@@ -7,7 +7,7 @@
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
-    "db:migrate": "node --loader tsx src/db/migrate.ts"
+    "db:migrate": "node --import tsx/esm src/db/migrate.ts"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
