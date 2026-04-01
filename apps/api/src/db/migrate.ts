@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { readFileSync } from 'fs';
 import { readdirSync } from 'fs';
 import { join, dirname } from 'path';
