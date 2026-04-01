@@ -10,7 +10,7 @@ declare module 'fastify' {
 
 const redisPlugin: FastifyPluginAsync = async (fastify) => {
   const redis = new Redis(fastify.config.REDIS_URL, {
-    maxRetriesPerRequest: 3,
+    maxRetriesPerRequest: null,
     lazyConnect: true,
   });
 
